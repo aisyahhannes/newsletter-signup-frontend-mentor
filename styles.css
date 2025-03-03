@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --red: #ff6257;
+    --blue800: #242742;
+    --blue700: #36384e;
+    --grey: #949494;
+    --white: #ffffff;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;
+    background-color: var(--blue700);
+}
+
+/* Headings and paragraph */
+h1 {
+    color: var(--blue800);
+    font-size: 40px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Specific classes */
+.form {
+    width: 800px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.details {
+    display: flex;
+    width: 50%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+ul {
+    padding: 0;
+    padding-left: 30px;
+}
+
+li {
+    font-size: 16px;
+    list-style: none;
+    list-style-image: url(assets/images/icon-list.svg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form div p {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--red);
+    margin: 0;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input[type="email"]:hover {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--blue800);
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, var(--red), orange);
+    box-shadow: 10px 10px 50px -10px var(--red);
+}
+
+.illustration {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.success {
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 40px;
+    gap: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+img {
+    width: 50px;
+
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    color: var(--white);
+    background-color: var(--blue800);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, var(--red), orange);
+    box-shadow: 10px 10px 50px -10px var(--red);
+}
+
+span {
+    font-weight: bold;
+}
+
+input[type="email"].error {
+    border: none;
+    outline: none;
+    border: 1px solid var(--red);
+    color: var(--red);
+    background-color: rgba(255, 98, 87, 0.2);
+}
+
+@media (max-width: 850px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;        
+    }
+
+    .form {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+}
