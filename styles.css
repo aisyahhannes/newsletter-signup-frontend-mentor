@@ -212,8 +212,8 @@ input[type="email"].error {
 
     .success {
         width: 80%;
-        height: 100%;
-        justify-content: center;
+        height: 50%;
+        justify-content: center ;
     }
 
     button {
